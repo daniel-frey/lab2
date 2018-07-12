@@ -71,19 +71,20 @@ while (bones < 3) {
   } if (answerSix === 3) {
     alert('That is the correct answer');
     score++; 
+    console.log('Number of questions correct= ', score);
     break;
   } } 
 
 var beers = 0;
 while (beers < 7) {
   var answerSeven = prompt('What is one of my two favorite beers?');
-  console.log('Is this hitting',answerSeven);
+  console.log('One of my favorite beers is',answerSeven);
   if ((answerSeven === 'Lagunitas Pale Ale')||(answerSeven ==='Irish Death')){
     alert('That is one of my favorite beers!');
     score++;
+    console.log('Number of questions correct= ', score);
     break;
-  } else {
-    console.log("is it hitting"); 
+  } else { 
     alert('That is not one of my favorite beers!');
     beers++;
   } }

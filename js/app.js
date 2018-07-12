@@ -76,10 +76,11 @@ while (bones < 3) {
   } } 
 
 var beers = 0;
+var favoriteBeers = ['Lagunitas Pale Ale', 'Irish Death']
 while (beers < 7) {
   var answerSeven = prompt('What is one of my two favorite beers?');
   console.log('One of my favorite beers is',answerSeven);
-  if ((answerSeven === 'Lagunitas Pale Ale')||(answerSeven ==='Irish Death')){
+  if ((answerSeven === favoriteBeers[0])||(answerSeven === favoriteBeers[1])){
     alert('That is one of my favorite beers!');
     score++;
     console.log('Number of questions correct= ', score);
